@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <div class="container">
+    <div class="container" id="container">
         <h1 class="title">Em uma escala de 1 a 10, qual a probabilidade de você indicar nossa empresa para um amigo ou conhecido?</h1>
         <div class="scale">
             <ul>
@@ -26,9 +26,16 @@
             </ul>
             <p id="feedback-paragraph">Você selecionou: <span id="feedback"></span></p>
             <div class="send-btn">
-                <button id="send" disabled="disabled">Enviar</button>
+                <button type="submit" id="send" disabled="disabled">Enviar</button>
             </div>
         </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <img src="404-tick.png" alt="">
+        <h2>Obrigado!</h2>
+        <p>Sua avaliação acabou de ser enviada. Obrigado.</p>
+        <button type="button" id="close-popup">Ok</button>
     </div>
 
     <script src="app.js"></script>
