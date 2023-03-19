@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem 0;
+    background-image: linear-gradient(62deg, rgb(142, 197, 252, 0.1) 0%, rgb(224, 195, 252, 0.1) 100%);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.container h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #2d2d2d;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.scale ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #5b5b5b;
+    padding: 5px 20px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: #f2f2f2;
+}
+
+p#feedback-paragraph {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 15px 0;
+    opacity: 0;
+}
+
+.send-btn {
+    display: flex;
+    justify-content: center;
+}
+
+button#send {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    background-color: #3550ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: all 0.2s ease;
+}
+
+button#send:disabled {
+    background-color: #142591;
+    cursor: not-allowed;
+}
+
+button#send:active {
+    transform: scale(0.9);
+}
